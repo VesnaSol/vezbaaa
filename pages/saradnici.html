@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNation - naslovna</title>
+    <link rel="stylesheet" href="../css/izgled.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="logo l1">
+            <img src="../img/tnaion-logo-white.png" alt="logo">
+        </div>
+        <div class="logo l2">
+            <img src="../img/tnaion-logo-white.png" alt="logo">
+        </div>
+        <div class="logo l3">
+            <img src="../img/tnaion-logo-white.png" alt="logo">
+        </div>
+        <div class="logo l4">
+            <img src="../img/tnaion-logo-white.png" alt="logo">
+        </div>
+
+        <div class="container">
+            <header>
+                <h1>Tnation Akademija</h1>
+                <nav>
+                    <ul class="glavnaNav">
+                        <li class="glavnaLi">
+                            <a href="../index.html">Naslovna</a>
+                        </li>
+                        <li class="glavnaLi">
+                            <a href="posao.html">Posao</a>
+                        </li>
+                        <li class="glavnaLi">
+                            <a href="saradnici.html">Saradnici</a>
+                            <div class="sub">
+                                <ul class="subNav">
+                                    <li>
+                                        <a href="#" class="test" data-color="rgba(255, 255, 153, 0.8)" id="sar1">Saradnik 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="test" data-color="rgba(204, 136, 238, 0.8)" id="sar2">Saradnik 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="test" data-color="rgba(255, 153, 153, 0.8)" id="sar3">Saradnik 3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="glavnaLi">
+                            <a href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="main">
+                <img class="mainImg" src="../img/ProgrammingLanguage1.png" alt="Programming languages">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+        //  KRACE, elegantnije resenje
+            document.querySelectorAll('.test').forEach((item) => {
+
+                item.onmouseover = () => item.style.backgroundColor = item.dataset.color;
+
+                item.onmouseout = () => item.style.backgroundColor = 'initial'; 
+
+            });
+
+        // ..........PESKE..............
+            // var sar1 = document.querySelector('#sar1');
+            // var sar2 = document.getElementById('sar2');
+            // var sar3 = document.getElementById('sar3');
+
+            // sar1.onmouseover = () => {
+            //     sar1.style.backgroundColor = 'rgba(255, 255, 153, 0.8)';
+            // }
+            // sar1.onmouseout = () => {
+            //     sar1.style.backgroundColor = 'initial';
+            // }
+
+            // sar2.onmouseover = () => {
+            //     sar2.style.backgroundColor = 'rgba(204, 136, 238, 0.8)';
+            // }
+            // sar2.onmouseout = () => {
+            //     sar2.style.backgroundColor = 'initial';
+            // }
+
+            // sar3.onmouseover = () => {
+            //     sar3.style.backgroundColor = 'rgba(255, 153, 153, 0.8)';
+            // }
+            // sar3.onmouseout = () => {
+            //     sar3.style.backgroundColor = 'initial';
+            // }
+        });
+
+    </script>
+
+</body>
+
+</html>
